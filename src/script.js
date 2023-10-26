@@ -30,7 +30,7 @@ closeButtons.forEach((button) =>
 );
 // II. By clicking anywhere on the overlay background
 overlay.addEventListener("click", hiddenToggle);
-// III. By clicking anywhere on the overlay background
+// III. By pressing the 'Escape' key
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     modal.classList.add("hidden");
