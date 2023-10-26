@@ -5,7 +5,7 @@ const showButtons = document.querySelectorAll(".show-modal");
 const closeButtons = document.querySelectorAll(".close-modal");
 const overlay = document.querySelector(".overlay");
 
-////// Opening modals with For Loop
+////// Showing modal windows with For Loop
 // for (let i = 0; i < showButtons.length; i++) {
 //   showButtons[i].addEventListener("click", function () {
 //     modal.classList.toggle("hidden");
@@ -19,11 +19,11 @@ const hiddenToggle = function () {
   overlay.classList.toggle("hidden");
 };
 
-///// Showing modals with For Each
+///// Showing modal windows with For Each
 // By clicking the show button
 showButtons.forEach((button) => button.addEventListener("click", hiddenToggle));
 
-///// Closing modals with For Each
+///// Closing modal windows with For Each
 // I. By clicking the close button
 closeButtons.forEach((button) =>
   button.addEventListener("click", hiddenToggle)
